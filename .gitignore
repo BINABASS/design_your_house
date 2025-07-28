@@ -5,6 +5,10 @@ __pycache__/
 
 # Ignore environment files
 .env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 venv/
 env/
 
@@ -13,8 +17,28 @@ env/
 .idea/
 *.swp
 *.swo
+*.sublime-*
 
-# Ignore OS generated files
+# Node.js dependencies and build outputs
+node_modules/
+
+# Build output
+dist/
+build/
+.next/
+out/
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Coverage directory used by testing tools
+coverage/
+.nyc_output/
+
+# Local development
 .DS_Store
 .DS_Store?
 ._*
